@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form đăng kí</title>
+    <link rel="stylesheet" href="bai4.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .error {
+            color: rgb(85, 0, 255);
+        }
+    </style>
+</head>
+<body>
+    <h1>Form đăng kí</h1>
+    <form id="myForm">
+        <label for="firstname">Họ:</label>
+        <input type="text" id="firstname" name="firstname"><br><br>
+        <label for="lastname">Tên:</label>
+        <input type="text" id="lastname" name="lastname"><br><br>
+        <label>Ngày sinh:</label>
+        Ngày <select id="day" name="day"></select>
+        Tháng <select id="month" name="month"></select>
+        Năm <select id="year" name="year"></select><br><br>
+        <label>Giới tính</label>
+        <input type="radio" id="male" name="gender" value="Nam">
+        <label for="male">Nam</label>
+        <input type="radio" id="female" name="gender" value="Nữ">
+        <label for="female">Nữ</label><br><br>
+        <label>Sở thích</label>
+        <input type="checkbox" id="reading" name="hobbies" value="Đọc sách">
+        <label for="reading">Đọc sách</label>
+        <input type="checkbox" id="movies" name="hobbies" value="Xem phim">
+        <label for="movies">Xem phim</label>
+        <input type="checkbox" id="music" name="hobbies" value="Nghe nhạc">
+        <label for="music">Nghe nhạc</label>
+        <input type="checkbox" id="sports" name="hobbies" value="Đá bóng">
+        <label for="sports">Đá bóng</label><br><br>    
+        <label for="phone">Số điện thoại:</label>
+        <input type="text" id="phone" name="phone"><br><br>
+        <label for="different">Khác:</label>
+        <input type="text" id="different" name="different"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <p id="error-message" class="error"></p>
+
+    <script src="validate.js"></script>
+</body>
+</html>
